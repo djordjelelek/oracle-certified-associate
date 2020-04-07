@@ -11,6 +11,8 @@ public class TypesAndVariables {
 
 		int primitiveType = 1; //$, or letter must be first sign in a name of variable (avoid $ and _)
 		System.out.println("primitive type : " + primitiveType);
+		
+		
 
 	}
 
@@ -20,5 +22,5 @@ public class TypesAndVariables {
 		localV = 1;
 		System.out.println("local variable : " + localV); // now can
 	}
-
+	
 }
