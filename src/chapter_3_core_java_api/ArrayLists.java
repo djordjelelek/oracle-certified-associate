@@ -1,6 +1,8 @@
 package chapter_3_core_java_api;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -16,6 +18,8 @@ public class ArrayLists {
 		list.clear(); //discard all elements
 		list.contains(2); //is list contains element
 		list.equals(list); //are lists point on the same list
+		Collections.sort(list); //sorting list
+		//ArrayList has good method toString for print
 		
 		/*in ArrayList you have wrapper classes of primitive types; 
 		if you add primitive values, ArrayList will convert primitive type to its wrapper AUTOBOXING*/
@@ -24,9 +28,11 @@ public class ArrayLists {
 		System.out.println(intFromString + stringFromInt);
 		//all wrapper classes have similar methods for converting Strings to that classes
 		
-		
-		
-		
+		Object[]arrayObject = list.toArray(); //converting from list to array
+		int[] array = {1,2};
+		List<int[]> list2 = Arrays.asList(array); //converting from array to backed list(we can`t change size of this list
+		System.out.println(arrayObject + " " + list2);
+	
 
 	}
 
