@@ -14,6 +14,8 @@ public class ChildClass extends ParentClass2{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	
 
 	
 
