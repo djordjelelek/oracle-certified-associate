@@ -14,14 +14,14 @@ public class Overloading {
 	static void overloadingMethod(long a, long b) { //different numbers of parameters
 	}
 	
-	//if you send to method overloadingMethod(1,2), order in which java calls method will be:
+	//if you send to method overloadingMethod(1.2), order in which java calls method will be:
 	static void overloadingMethod(double d) { //first
 	}
-	static void overloadingMethod(float d) {  //second
+	static void overloadingMethod(float d) {  //Can`t call
 	}
-	static void overloadingMethod(Double d) {  //third
+	static void overloadingMethod(Double d) {  //second
 	}
-	static void overloadingMethod(double ... d) {  //forth
+	static void overloadingMethod(Object d) {  //third
 	}
 	//it is not essentially which method you write first
 	
