@@ -3,7 +3,7 @@ package chapter_5_class_design.overreading_and_hiding;
 public class ParentClass {
 	// don`t hide variables, also you can`t overrid them
 
-	public void overreadingMethod(boolean b) throws RuntimeException {
+	protected void overreadingMethod(boolean b) throws RuntimeException {
 		System.out.println("parent class");
 		hidingMethod();
 	}

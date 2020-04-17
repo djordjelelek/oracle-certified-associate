@@ -5,7 +5,8 @@ public class ChildClass extends ParentClass {
 
 	// the same like the ParentClass method (otherwise it will be overloading)
 	public void overreadingMethod(boolean b) throws NullPointerException {
-		System.out.println("child class" + b);
+		System.out.println("child class");
+		// super.overreadingMethod(b);
 		
 	}
 	
